@@ -1,3 +1,3 @@
 # AWS_session
-How are tiy doing.
+How are you doing.
 Test repo for AWS session
