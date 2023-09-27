@@ -1,0 +1,129 @@
+{
+    "SecurityGroups": [
+        {
+            "Description": "Test Purpose",
+            "GroupName": "Test",
+            "IpPermissions": [],
+            "OwnerId": "892233677521",
+            "GroupId": "sg-09ca329ea621ecf40",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0261eff23f5eb4e71"
+        },
+        {
+            "Description": "launch-wizard-1 created 2023-08-26T23:35:04.252Z",
+            "GroupName": "launch-wizard-1",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "892233677521",
+            "GroupId": "sg-00af82f1822847860",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0261eff23f5eb4e71"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0440b6c3a30086aab",
+                            "UserId": "892233677521"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "892233677521",
+            "GroupId": "sg-0440b6c3a30086aab",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0261eff23f5eb4e71"
+        },
+        {
+            "Description": "Testing secutity group for ssh",
+            "GroupName": "myTest",
+            "IpPermissions": [],
+            "OwnerId": "892233677521",
+            "GroupId": "sg-07461576d82348d25",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0261eff23f5eb4e71"
+        }
+    ]
+}
